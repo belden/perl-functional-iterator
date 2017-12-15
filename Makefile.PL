@@ -10,4 +10,10 @@ WriteMakefile(
   LICENSE => 'perl',
   PL_FILES            => {},
   dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
+  META_MERGE => {
+    resources => {
+      bugtracker => 'https://github.com/belden/perl-functional-iterator/issues',
+      repository => 'https://github.com/belden/perl-functional-iterator',
+    },
+  },
 );
